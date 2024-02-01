@@ -1,0 +1,40 @@
+.aside-contacto {
+    width: 200px;
+    height: 400px;
+    background-color:#B28939;
+    font-size: 15px;
+    margin-right: 100px;
+}
+
+ .main-contacto {
+    margin-top: 50px;
+    display: flex;
+ }
+
+ .formulario {
+    background-color: white;
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 10px 10px black;
+    text-align: center;
+  }
+
+  .form-titulo {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+
+  .form-conteiner {
+    margin-top: 15px;
+  }
+
+  .form-imput {
+    width: 100%;
+    background: none;
+    color: grey;
+    font-size: 15px;
+    padding: 15px;
+  }
