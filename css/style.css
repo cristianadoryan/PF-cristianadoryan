@@ -32,30 +32,19 @@ header {
     box-shadow: 10px 10px black;
 }
 
-header section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header section div a img {
+header nav div a img {
     height: 100px;
     width: 400px;
 }
 
-header section nav ul {
-    display: flex;
-    list-style-type: none;
-}
-
-header section nav ul li {
+header nav div ul li {
     margin-left: 30px;
+    justify-content: space-between;
 }
 
-header section nav ul li a {
-    text-decoration: none;
+.prueba {
+    justify-content: space-between;
 }
-
 /*titulo*/
 
 .titulo-cabecera {
@@ -350,9 +339,9 @@ aside ul li {
 
 .section {
     display: grid;
-    grid-template-columns: repeat(3, 370px);
+    grid-template-columns: repeat(3, 320px);
     grid-template-rows: repeat(2, 1fr);
-    gap: 10px;
+    gap: 5px;
     justify-content: center;
 }
 
