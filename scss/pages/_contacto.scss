@@ -1,41 +1,44 @@
-.aside-contacto {
-    width: 200px;
-    height: 400px;
-    background-color:$fondo-asides;
-    font-size: 15px;
-    margin-right: 100px;
-    box-shadow: $sombra-cuadros;
-}
-
  .main-contacto {
     margin-top: 50px;
     display: flex;
+    .aside-contacto {
+      width: 200px;
+      height: 400px;
+      background-color:$fondo-asides;
+      font-size: 15px;
+      margin-right: 100px;
+      box-shadow: $sombra-cuadros;
+  }
+    .formulario {
+      background-color: white;
+      margin: auto;
+      width: 90%;
+      max-width: 400px;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: $sombra-cuadros;
+      text-align: center;
+      .form-titulo {
+        font-size: 40px;
+        margin-bottom: 15px;
+      }
+      .form-conteiner {
+        margin-top: 15px;
+        .form-imput {
+          width: 100%;
+          background: none;
+          color: grey;
+          font-size: 15px;
+          padding: 15px;
+        }
+      }
+    }
  }
 
- .formulario {
-    background-color: white;
-    margin: auto;
-    width: 90%;
-    max-width: 400px;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: $sombra-cuadros;
-    text-align: center;
-  }
+ 
 
-  .form-titulo {
-    font-size: 40px;
-    margin-bottom: 15px;
-  }
+  
 
-  .form-conteiner {
-    margin-top: 15px;
-  }
+  
 
-  .form-imput {
-    width: 100%;
-    background: none;
-    color: grey;
-    font-size: 15px;
-    padding: 15px;
-  }
+ 

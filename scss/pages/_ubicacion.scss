@@ -1,54 +1,52 @@
+.main-ubicacion {
+    display: flex;
+    justify-content: center;
+    .mapa {
+        margin-top: 40px;
+        margin-right: 70px;
+        margin-left: 70px;
+        border-radius: 10px;
+        width: 640px;
+        height:480px;
+        background-color: #83AF9B;
+        padding: 17px;
+        box-shadow: $sombra-cuadros;
+        z-index: 1;
+    }
+    .boton-ubicacion 
+    button {
+        height: 40px;
+        background-color: #AEE8FB; 
+        color: white;
+        border-radius: 5px;
+        padding: 5px;
+        margin-bottom: 20px;
+        border: none;
+        margin-top: 40px;
+    }
+    .globo-ubicacion {
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+        background: radial-gradient(ellipse 200px 100px, skyblue, #FC9D9A);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-transform: uppercase;
+        transition: 1s;
+        padding: 15px;
+        transition-timing-function: ease-out;
+        margin-top: 50px;
+        text-align: center;
+        transform: translateX(-300px);
+    }
+}
+
 .boton-ubicacion a {
     text-decoration: none;
 }
 
-.boton-ubicacion button {
-    height: 40px;
-    background-color: #AEE8FB; 
-    color: white;
-    border-radius: 5px;
-    padding: 5px;
-    margin-bottom: 20px;
-    border: none;
-    margin-top: 40px;
-}
-
-.globo-ubicacion {
-    width: 200px;
-    height: 200px;
-    border-radius: 20px;
-    background: radial-gradient(ellipse 200px 100px, skyblue, #FC9D9A);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-transform: uppercase;
-    transition: 1s;
-    padding: 15px;
-    transition-timing-function: ease-out;
-    margin-top: 50px;
-    text-align: center;
-    transform: translateX(-300px);
-}
-
 .boton-ubicacion button:hover + .globo-ubicacion {
     transform: translateX(0px);
-}
-
-.main-ubicacion {
-    display: flex;
-    justify-content: center;
-}
-
-.mapa {
-    margin-top: 40px;
-    margin-right: 70px;
-    margin-left: 70px;
-    border-radius: 10px;
-    width: 640px;
-    height:480px;
-    background-color: #83AF9B;
-    padding: 17px;
-    box-shadow: $sombra-cuadros;
-    z-index: 1;
 }

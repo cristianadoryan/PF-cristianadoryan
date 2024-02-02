@@ -108,14 +108,34 @@ footer img {
   padding-bottom: 20px;
 }
 
-.chat {
-  width: 60px;
-  position: fixed;
-  bottom: 100px;
-  right: 30px;
+.introduccion {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
 }
-
-.descripcion {
+.introduccion .video-index {
+  display: flex;
+  height: 430px;
+  background-color: #83AF9B;
+  box-shadow: 10px 10px black;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.introduccion .video-index iframe {
+  border-radius: 15px;
+}
+.introduccion .nosotros {
+  background-color: rgb(124, 137, 146);
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 10px 10px black;
+  padding-top: 20px;
+}
+.introduccion .nosotros h4 {
+  color: white;
+}
+.introduccion .descripcion {
   display: flex;
   background-color: #FE4365;
   height: 60px;
@@ -127,48 +147,15 @@ footer img {
   justify-content: center;
 }
 
-.introduccion {
+.ilustraciones {
   display: flex;
-  margin-top: 20px;
-  justify-content: space-between;
+  background-color: #FC9D9A;
+  margin-top: 50px;
 }
-
-main section div iframe {
-  border-radius: 15px;
+.ilustraciones .ilus {
+  gap: 20px;
 }
-
-.nosotros {
-  background-color: rgb(124, 137, 146);
-  border-radius: 15px;
-  text-align: center;
-  box-shadow: 10px 10px black;
-  padding-top: 20px;
-}
-
-section div h4 {
-  color: white;
-}
-
-.video-index {
-  display: flex;
-  height: 430px;
-  background-color: #83AF9B;
-  box-shadow: 10px 10px black;
-  border-radius: 15px;
-  align-items: center;
-  justify-content: center;
-}
-
-/*cards*/
-.bodysuit {
-  position: absolute;
-  top: 0;
-  left: 0px;
-  background-color: #FE4365;
-  opacity: 0.7;
-}
-
-.card-index {
+.ilustraciones .ilus .card-index {
   transition: box-shadow 0.3s ease;
   background-color: rgba(225, 225, 225, 0.25);
   width: 300px;
@@ -179,70 +166,37 @@ section div h4 {
   border-radius: 30px;
   cursor: pointer;
 }
-
-.card-index:hover {
-  box-shadow: 10px 10px black;
-}
-
-.card-index img {
+.ilustraciones .ilus .card-index img {
   width: 225px;
   height: 325px;
   display: block;
   margin: 0 auto;
   border-radius: 10px;
 }
-
-.card-index p {
+.ilustraciones .ilus .card-index p {
   margin-top: 20px;
   text-align: center;
   color: white;
   font-size: 20px;
   border-radius: 20px;
 }
-
-.ilustraciones {
-  display: flex;
-  background-color: #FC9D9A;
-  margin-top: 50px;
-}
-
-.ilus {
-  gap: 20px;
-}
-
-aside {
-  display: flex;
-  flex-direction: column;
-  background-color: #83AF9B;
-  text-align: center;
-  grid-area: aside;
-  align-items: center;
-  border-radius: 30px;
-  margin-right: 30px;
-  margin-top: 20px;
-  font-size: 25px;
-  padding: 10px;
-  color: white;
-  justify-content: center;
-}
-
-aside button {
-  font-size: 10px;
-  width: 80px;
-  height: 50px;
+.ilustraciones .ilus .card-index .bodysuit {
+  position: absolute;
+  top: 0;
+  left: 0px;
   background-color: #FE4365;
-  color: white;
-  border-radius: 5px;
-  padding: 5px;
-  transition: background-color 0.5s;
+  opacity: 0.7;
 }
 
-aside ul {
-  padding: 0;
+.chat {
+  width: 60px;
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
 }
 
-aside ul li {
-  list-style-type: none;
+.card-index:hover {
+  box-shadow: 10px 10px black;
 }
 
 .body {
@@ -250,8 +204,31 @@ aside ul li {
   grid-template-areas: "intro intro intro intro" "imagen imagen imagen aside";
   grid-template-columns: 25% 25% 25% 25%;
 }
-
-.card-galeria {
+.body .introduccion-galeria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FE4365;
+  height: 60px;
+  text-align: center;
+  border-radius: 20px;
+  color: white;
+  margin-top: 40px;
+  box-shadow: 10px 10px black;
+  grid-area: intro;
+  margin-bottom: 30px;
+}
+.body .galeria-imagenes {
+  grid-area: imagen;
+}
+.body .galeria-imagenes .section {
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5px;
+  justify-content: center;
+}
+.body .galeria-imagenes .section .card-galeria {
   display: flex;
   background-color: #AEE8FB;
   border-radius: 30px;
@@ -267,31 +244,23 @@ aside ul li {
   transition: transform 0.5s;
   margin-top: 20px;
 }
-
-.card-galeria:hover {
-  transform: scale(1.06);
-}
-
-.card-galeria img {
+.body .galeria-imagenes .section .card-galeria img {
   width: 270px;
   height: 370px;
   border-top-right-radius: 30px;
   border-top-left-radius: 30px;
 }
-
-.card-galeria h4 {
+.body .galeria-imagenes .section .card-galeria h4 {
   color: #FE4365;
   font-size: 18px;
 }
-
-.card-galeria p {
+.body .galeria-imagenes .section .card-galeria p {
   color: skyblue;
   font-size: 13px;
   width: 100%;
   margin: 0;
 }
-
-.card-galeria div {
+.body .galeria-imagenes .section .card-galeria div {
   display: grid;
   background-color: white;
   border-bottom-left-radius: 30px;
@@ -299,32 +268,40 @@ aside ul li {
   height: 110px;
   align-items: center;
 }
-
-.galeria-imagenes {
-  grid-area: imagen;
-}
-
-.introduccion-galeria {
+.body aside {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #FE4365;
-  height: 60px;
+  flex-direction: column;
+  background-color: #83AF9B;
   text-align: center;
-  border-radius: 20px;
+  grid-area: aside;
+  align-items: center;
+  border-radius: 30px;
+  margin-right: 30px;
+  margin-top: 20px;
+  font-size: 25px;
+  padding: 10px;
   color: white;
-  margin-top: 40px;
-  box-shadow: 10px 10px black;
-  grid-area: intro;
-  margin-bottom: 30px;
+  justify-content: center;
+}
+.body aside ul {
+  padding: 0;
+}
+.body aside ul li {
+  list-style-type: none;
+}
+.body aside button {
+  font-size: 10px;
+  width: 80px;
+  height: 50px;
+  background-color: #FE4365;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  transition: background-color 0.5s;
 }
 
-.section {
-  display: grid;
-  grid-template-columns: repeat(3, 320px);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 5px;
-  justify-content: center;
+.card-galeria:hover {
+  transform: scale(1.06);
 }
 
 main section div .card-galeria button:hover {
@@ -419,11 +396,23 @@ tr:hover {
   cursor: pointer;
 }
 
-.boton-ubicacion a {
-  text-decoration: none;
+.main-ubicacion {
+  display: flex;
+  justify-content: center;
 }
-
-.boton-ubicacion button {
+.main-ubicacion .mapa {
+  margin-top: 40px;
+  margin-right: 70px;
+  margin-left: 70px;
+  border-radius: 10px;
+  width: 640px;
+  height: 480px;
+  background-color: #83AF9B;
+  padding: 17px;
+  box-shadow: 10px 10px black;
+  z-index: 1;
+}
+.main-ubicacion .boton-ubicacion button {
   height: 40px;
   background-color: #AEE8FB;
   color: white;
@@ -433,8 +422,7 @@ tr:hover {
   border: none;
   margin-top: 40px;
 }
-
-.globo-ubicacion {
+.main-ubicacion .globo-ubicacion {
   width: 200px;
   height: 200px;
   border-radius: 20px;
@@ -452,29 +440,19 @@ tr:hover {
   transform: translateX(-300px);
 }
 
+.boton-ubicacion a {
+  text-decoration: none;
+}
+
 .boton-ubicacion button:hover + .globo-ubicacion {
   transform: translateX(0px);
 }
 
-.main-ubicacion {
+.main-contacto {
+  margin-top: 50px;
   display: flex;
-  justify-content: center;
 }
-
-.mapa {
-  margin-top: 40px;
-  margin-right: 70px;
-  margin-left: 70px;
-  border-radius: 10px;
-  width: 640px;
-  height: 480px;
-  background-color: #83AF9B;
-  padding: 17px;
-  box-shadow: 10px 10px black;
-  z-index: 1;
-}
-
-.aside-contacto {
+.main-contacto .aside-contacto {
   width: 200px;
   height: 400px;
   background-color: #83AF9B;
@@ -482,13 +460,7 @@ tr:hover {
   margin-right: 100px;
   box-shadow: 10px 10px black;
 }
-
-.main-contacto {
-  margin-top: 50px;
-  display: flex;
-}
-
-.formulario {
+.main-contacto .formulario {
   background-color: white;
   margin: auto;
   width: 90%;
@@ -498,17 +470,14 @@ tr:hover {
   box-shadow: 10px 10px black;
   text-align: center;
 }
-
-.form-titulo {
+.main-contacto .formulario .form-titulo {
   font-size: 40px;
   margin-bottom: 15px;
 }
-
-.form-conteiner {
+.main-contacto .formulario .form-conteiner {
   margin-top: 15px;
 }
-
-.form-imput {
+.main-contacto .formulario .form-conteiner .form-imput {
   width: 100%;
   background: none;
   color: grey;
