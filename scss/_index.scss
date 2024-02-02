@@ -12,7 +12,7 @@
     border-radius: 15px;
     color: white;
     margin-top: 30px;
-    box-shadow: 10px 10px black;
+    box-shadow: $sombra-cuadros;
     align-items: center;
     justify-content: center;
 }
@@ -32,7 +32,7 @@ main section div iframe {
     background-color: rgb(124, 137, 146);
     border-radius: 15px;
     text-align: center;
-    box-shadow: 10px 10px black;
+    box-shadow: $sombra-cuadros;
     padding-top: 20px;
 }
 
@@ -44,7 +44,7 @@ section div h4 {
     display: flex;
     height:430px;
     background-color: #83AF9B;
-    box-shadow: 10px 10px black;
+    box-shadow: $sombra-cuadros;
     border-radius: 15px;
     align-items: center;
     justify-content: center;
@@ -72,7 +72,7 @@ section div h4 {
 }
 
 .card-index:hover {
-    box-shadow: 10px 10px black;
+    box-shadow: $sombra-cuadros;
 }
 
 .card-index img {

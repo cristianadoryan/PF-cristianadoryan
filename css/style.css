@@ -108,26 +108,6 @@ footer img {
   padding-bottom: 20px;
 }
 
-@media (max-width: 991px) {
-  .section {
-    grid-template-columns: repeat(2, 400px);
-    grid-template-rows: repeat(3, 1fr);
-  }
-  .body {
-    grid-template-areas: "intro intro intro" "imagen imagen imagen" "aside aside aside";
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media (max-width: 480px) {
-  .body {
-    grid-template-areas: "intro" "imagen" "aside";
-    grid-template-columns: 1fr;
-  }
-  .section {
-    grid-template-columns: repeat(1, 400px);
-    grid-template-rows: repeat(6, 1fr);
-  }
-}
 .chat {
   width: 60px;
   position: fixed;
@@ -497,9 +477,10 @@ tr:hover {
 .aside-contacto {
   width: 200px;
   height: 400px;
-  background-color: #B28939;
+  background-color: #83AF9B;
   font-size: 15px;
   margin-right: 100px;
+  box-shadow: 10px 10px black;
 }
 
 .main-contacto {
@@ -533,6 +514,30 @@ tr:hover {
   color: grey;
   font-size: 15px;
   padding: 15px;
+}
+
+@media (max-width: 991px) {
+  body {
+    width: 100vh;
+  }
+  .section {
+    grid-template-columns: repeat(2, 350px);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .body {
+    grid-template-areas: "intro intro intro" "imagen imagen imagen" "aside aside aside";
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 480px) {
+  .body {
+    grid-template-areas: "intro" "imagen" "aside";
+    grid-template-columns: 1fr;
+  }
+  .section {
+    grid-template-columns: repeat(1, 400px);
+    grid-template-rows: repeat(6, 1fr);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
