@@ -1,0 +1,36 @@
+@media (max-width:991px){
+
+    body {
+        width: 100vh
+      }
+
+    .section {
+        grid-template-columns: repeat(2, 400px);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .body {
+        grid-template-areas:
+        "intro intro intro"
+        "imagen imagen imagen"
+        "aside aside aside"
+        ;
+        grid-template-columns: 1fr 1fr; 
+    }
+    
+}
+
+@media (max-width:480px) {
+    
+    .body {
+        grid-template-areas:
+        "intro"
+        "imagen"
+        "aside"
+        ;
+        grid-template-columns: 1fr; 
+    }
+    .section {
+        grid-template-columns: repeat(1, 400px);
+        grid-template-rows: repeat(6, 1fr);
+    }
+}
