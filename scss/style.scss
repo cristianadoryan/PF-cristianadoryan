@@ -1,7 +1,8 @@
-@import 'generales';
-@import 'index';
-@import 'galeria';
-@import 'cotizador';
-@import 'ubicacion';
-@import 'contacto';
+@import 'bases/variables';
+@import 'bases/generales';
+@import 'pages/index';
+@import 'pages/galeria';
+@import 'pages/cotizador';
+@import 'pages/ubicacion';
+@import 'pages/contacto';
 @import 'queris';

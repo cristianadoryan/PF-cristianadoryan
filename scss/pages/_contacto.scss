@@ -1,9 +1,10 @@
 .aside-contacto {
     width: 200px;
     height: 400px;
-    background-color:#B28939;
+    background-color:$fondo-asides;
     font-size: 15px;
     margin-right: 100px;
+    box-shadow: $sombra-cuadros;
 }
 
  .main-contacto {
@@ -18,7 +19,7 @@
     max-width: 400px;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 10px 10px black;
+    box-shadow: $sombra-cuadros;
     text-align: center;
   }
 

@@ -1,7 +1,7 @@
 aside {
     display: flex;
     flex-direction: column;
-    background-color: #83AF9B;
+    background-color: $fondo-asides;
     text-align: center;
     grid-area: aside;
     align-items: center;
@@ -53,7 +53,7 @@ aside ul li {
     padding-top: 15px;
     border: 5px solid #76D3DE;
     text-align: center;
-    box-shadow: 10px 10px black;
+    box-shadow: $sombra-cuadros;
     cursor: pointer;
     transition: transform .5s;
     margin-top: 20px;
@@ -105,7 +105,7 @@ aside ul li {
     border-radius: 20px;
     color: white;
     margin-top: 40px;
-    box-shadow: 10px 10px black;
+    box-shadow: $sombra-cuadros;
     grid-area: intro;
     margin-bottom: 30px;
 }

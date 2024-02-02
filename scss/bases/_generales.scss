@@ -27,7 +27,7 @@ body {
 
 header {
     background-color: #83AF9B;
-    box-shadow: 10px 10px black;
+    box-shadow: $sombra-cuadros;
 }
 
 header nav div a img {
@@ -48,7 +48,7 @@ header nav div ul li {
     background-position:center;
     height: 450px;
     margin-top: 20px;
-    box-shadow: 10px 10px black;
+    box-shadow: $sombra-cuadros;
     border-radius: 15px;
 }
 
