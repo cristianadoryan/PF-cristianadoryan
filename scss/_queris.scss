@@ -4,7 +4,7 @@
         width: 100vh
     }
 
-    .section {
+    .body .galeria-imagenes .section {
         grid-template-columns: repeat(2, 350px);
         grid-template-rows: repeat(3, 1fr);
     }
@@ -21,15 +21,19 @@
 
 @media (max-width:480px) {
     
+     body {
+        width: 100vh
+    }
+
+    .body .galeria-imagenes .section {
+        grid-template-columns: repeat(1, 350px);
+        grid-template-rows: repeat(6, 1fr);
+    }
     .body {
         grid-template-areas:
         "intro"
         "imagen"
         "aside";
         grid-template-columns: 1fr; 
-    }
-    .section {
-        grid-template-columns: repeat(1, 400px);
-        grid-template-rows: repeat(6, 1fr);
     }
 }

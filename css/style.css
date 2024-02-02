@@ -133,14 +133,14 @@ footer img {
   padding-top: 20px;
 }
 .introduccion .nosotros h4 {
-  color: white;
+  color: #ffffff;
 }
 .introduccion .descripcion {
   display: flex;
   background-color: #FE4365;
   height: 60px;
   border-radius: 15px;
-  color: white;
+  color: #ffffff;
   margin-top: 30px;
   box-shadow: 10px 10px black;
   align-items: center;
@@ -176,7 +176,7 @@ footer img {
 .ilustraciones .ilus .card-index p {
   margin-top: 20px;
   text-align: center;
-  color: white;
+  color: #ffffff;
   font-size: 20px;
   border-radius: 20px;
 }
@@ -212,7 +212,7 @@ footer img {
   height: 60px;
   text-align: center;
   border-radius: 20px;
-  color: white;
+  color: #ffffff;
   margin-top: 40px;
   box-shadow: 10px 10px black;
   grid-area: intro;
@@ -280,7 +280,7 @@ footer img {
   margin-top: 20px;
   font-size: 25px;
   padding: 10px;
-  color: white;
+  color: #ffffff;
   justify-content: center;
 }
 .body .aside-galeria ul {
@@ -294,7 +294,7 @@ footer img {
   width: 80px;
   height: 50px;
   background-color: #FE4365;
-  color: white;
+  color: #ffffff;
   border-radius: 5px;
   padding: 5px;
   transition: background-color 0.5s;
@@ -325,7 +325,7 @@ main section div .card-galeria button:hover {
   height: 100px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  color: white;
+  color: #ffffff;
   margin-top: 30px;
   align-items: center;
   justify-content: center;
@@ -345,7 +345,7 @@ main section div .card-galeria button:hover {
   height: 100px;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
-  color: white;
+  color: #ffffff;
   align-items: center;
   justify-content: center;
   padding: 15px;
@@ -379,14 +379,14 @@ table {
 }
 
 th, td {
-  border: solid 3px black;
+  border: solid 3px #000000;
   padding: 10px;
   text-align: center;
   color: rgb(247, 72, 72);
 }
 
 th {
-  color: white;
+  color: #ffffff;
   background-color: #FE4365;
   font-size: 20px;
 }
@@ -415,7 +415,7 @@ tr:hover {
 .main-ubicacion .boton-ubicacion button {
   height: 40px;
   background-color: #AEE8FB;
-  color: white;
+  color: #ffffff;
   border-radius: 5px;
   padding: 5px;
   margin-bottom: 20px;
@@ -430,7 +430,7 @@ tr:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: #ffffff;
   text-transform: uppercase;
   transition: 1s;
   padding: 15px;
@@ -453,6 +453,8 @@ tr:hover {
   display: flex;
 }
 .main-contacto .aside-contacto {
+  display: flex;
+  flex-direction: column;
   width: 200px;
   height: 400px;
   background-color: #83AF9B;
@@ -460,6 +462,20 @@ tr:hover {
   margin-right: 100px;
   box-shadow: 10px 10px black;
   border-radius: 15px;
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.main-contacto .aside-contacto .boton-contacto {
+  font-size: 10px;
+  width: 60px;
+  height: 30px;
+  background-color: #FE4365;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 5px;
+  transition: background-color 0.5s;
 }
 .main-contacto .formulario {
   background-color: white;
@@ -490,7 +506,7 @@ tr:hover {
   body {
     width: 100vh;
   }
-  .section {
+  .body .galeria-imagenes .section {
     grid-template-columns: repeat(2, 350px);
     grid-template-rows: repeat(3, 1fr);
   }
@@ -500,13 +516,16 @@ tr:hover {
   }
 }
 @media (max-width: 480px) {
+  body {
+    width: 100vh;
+  }
+  .body .galeria-imagenes .section {
+    grid-template-columns: repeat(1, 350px);
+    grid-template-rows: repeat(6, 1fr);
+  }
   .body {
     grid-template-areas: "intro" "imagen" "aside";
     grid-template-columns: 1fr;
-  }
-  .section {
-    grid-template-columns: repeat(1, 400px);
-    grid-template-rows: repeat(6, 1fr);
   }
 }
 

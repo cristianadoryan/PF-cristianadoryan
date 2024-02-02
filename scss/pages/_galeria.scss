@@ -15,7 +15,7 @@
         height: 60px;
         text-align: center;
         border-radius: 20px;
-        color: white;
+        color: map-get($colores, texto-uno );
         margin-top: 40px;
         box-shadow: $sombra-cuadros;
         grid-area: intro;
@@ -76,7 +76,7 @@
     .aside-galeria {
         display: flex;
         flex-direction: column;
-        background-color: $fondo-asides;
+        background-color: map-get($colores, fondo-dos );
         text-align: center;
         grid-area: aside;
         align-items: center;
@@ -85,7 +85,7 @@
         margin-top: 20px;
         font-size: 25px;
         padding: 10px;
-        color: white;
+        color: map-get($colores, texto-uno );
         justify-content:center;
         ul {
             padding: 0;
@@ -99,7 +99,7 @@
             width: 80px;
             height: 50px;
             background-color: #FE4365;
-            color: white;
+            color: map-get($colores, texto-uno );
             border-radius: 5px;
             padding: 5px;
             transition: background-color .5s;

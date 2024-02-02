@@ -8,7 +8,7 @@
         border-radius: 10px;
         width: 640px;
         height:480px;
-        background-color: #83AF9B;
+        background-color:map-get($colores, fondo-dos );
         padding: 17px;
         box-shadow: $sombra-cuadros;
         z-index: 1;
@@ -17,7 +17,7 @@
     button {
         height: 40px;
         background-color: #AEE8FB; 
-        color: white;
+        color: map-get($colores, texto-uno );
         border-radius: 5px;
         padding: 5px;
         margin-bottom: 20px;
@@ -32,7 +32,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        color: white;
+        color: map-get($colores, texto-uno );
         text-transform: uppercase;
         transition: 1s;
         padding: 15px;

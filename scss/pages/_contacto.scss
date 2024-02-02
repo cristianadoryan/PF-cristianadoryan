@@ -2,13 +2,29 @@
     margin-top: 50px;
     display: flex;
     .aside-contacto {
+      display: flex;
+      flex-direction: column;
       width: 200px;
       height: 400px;
-      background-color:$fondo-asides;
+      background-color:map-get($colores, fondo-dos );
       font-size: 15px;
       margin-right: 100px;
       box-shadow: $sombra-cuadros;
       border-radius: 15px;
+      color: map-get($colores, texto-uno );
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      .boton-contacto {
+        font-size: 10px;
+            width: 60px;
+            height: 30px;
+            background-color: #FE4365;
+            color: map-get($colores, texto-uno );
+            border-radius: 5px;
+            padding: 5px;
+            transition: background-color .5s;
+      }
   }
     .formulario {
       background-color: white;

@@ -6,7 +6,7 @@
     .video-index {
         display: flex;
         height:430px;
-        background-color: #83AF9B;
+        background-color: map-get($colores, fondo-dos );
         box-shadow: $sombra-cuadros;
         border-radius: 15px;
         align-items: center;
@@ -23,7 +23,7 @@
         box-shadow: $sombra-cuadros;
         padding-top: 20px;
         h4 {
-            color: white;
+            color: map-get($colores, texto-uno );
         }
         
     }
@@ -32,7 +32,7 @@
         background-color: #FE4365;
         height: 60px;
         border-radius: 15px;
-        color: white;
+        color: map-get($colores, texto-uno );
         margin-top: 30px;
         box-shadow: $sombra-cuadros;
         align-items: center;
@@ -43,7 +43,7 @@
 
 .ilustraciones {
     display: flex;
-    background-color: #FC9D9A;
+    background-color: map-get($colores, fondo-uno );
     margin-top: 50px;
     .ilus {
         gap: 20px;
@@ -67,7 +67,7 @@
             p {
                 margin-top: 20px;
                 text-align: center;
-                color: white;
+                color: map-get($colores, texto-uno );
                 font-size: 20px;
                 border-radius: 20px;
             }
