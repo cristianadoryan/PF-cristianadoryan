@@ -268,7 +268,7 @@ footer img {
   height: 110px;
   align-items: center;
 }
-.body aside {
+.body .aside-galeria {
   display: flex;
   flex-direction: column;
   background-color: #83AF9B;
@@ -283,13 +283,13 @@ footer img {
   color: white;
   justify-content: center;
 }
-.body aside ul {
+.body .aside-galeria ul {
   padding: 0;
 }
-.body aside ul li {
+.body .aside-galeria ul li {
   list-style-type: none;
 }
-.body aside button {
+.body .aside-galeria button {
   font-size: 10px;
   width: 80px;
   height: 50px;
@@ -459,6 +459,7 @@ tr:hover {
   font-size: 15px;
   margin-right: 100px;
   box-shadow: 10px 10px black;
+  border-radius: 15px;
 }
 .main-contacto .formulario {
   background-color: white;
