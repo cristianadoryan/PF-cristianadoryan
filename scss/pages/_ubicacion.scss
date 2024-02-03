@@ -1,6 +1,5 @@
 .main-ubicacion {
-    display: flex;
-    justify-content: center;
+    @extend %flex-center;
     .mapa {
         margin-top: 40px;
         margin-right: 70px;
@@ -25,13 +24,11 @@
         margin-top: 40px;
     }
     .globo-ubicacion {
+        @extend %flex-center;
         width: 200px;
         height: 200px;
         border-radius: 20px;
         background: radial-gradient(ellipse 200px 100px, skyblue, #FC9D9A);
-        display: flex;
-        justify-content: center;
-        align-items: center;
         color: map-get($colores, texto-uno );
         text-transform: uppercase;
         transition: 1s;

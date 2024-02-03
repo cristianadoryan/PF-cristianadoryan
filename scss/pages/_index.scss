@@ -4,13 +4,12 @@
     margin-top: 20px;
     justify-content: space-between;
     .video-index {
-        display: flex;
+        @extend %flex-center;
         height:430px;
         background-color: map-get($colores, fondo-dos );
         box-shadow: $sombra-cuadros;
         border-radius: 15px;
-        align-items: center;
-        justify-content: center;
+        
         iframe {
             border-radius: 15px;
         
@@ -28,15 +27,13 @@
         
     }
     .descripcion {
-        display: flex;
+        @extend %flex-center;
         background-color: #FE4365;
         height: 60px;
         border-radius: 15px;
         color: map-get($colores, texto-uno );
         margin-top: 30px;
         box-shadow: $sombra-cuadros;
-        align-items: center;
-        justify-content: center;
     }
     
 }

@@ -2,7 +2,7 @@
     margin-top: 50px;
     display: flex;
     .aside-contacto {
-      display: flex;
+      @extend %flex-center;
       flex-direction: column;
       width: 200px;
       height: 400px;
@@ -13,8 +13,6 @@
       border-radius: 15px;
       color: map-get($colores, texto-uno );
       text-align: center;
-      justify-content: center;
-      align-items: center;
       .boton-contacto {
         font-size: 10px;
             width: 60px;
