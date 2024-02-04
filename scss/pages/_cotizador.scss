@@ -3,7 +3,7 @@
 }
 
 .dato-cotizador {
-    @extend %flex-center;
+    @include flex (flex, row, center, center);
 }
 
 .importante button{
@@ -27,7 +27,7 @@
 }
 
 .otro-cotizador {
-    @extend %flex-center;
+    @include flex (flex, row, center, center);
     background-color: #FE4365;
     width: 400px;
     height: 100px;

@@ -2,8 +2,7 @@
     margin-top: 50px;
     display: flex;
     .aside-contacto {
-      @extend %flex-center;
-      flex-direction: column;
+      @include flex (flex, column, center, center);
       width: 200px;
       height: 400px;
       background-color:map-get($colores, fondo-dos );
@@ -14,14 +13,11 @@
       color: map-get($colores, texto-uno );
       text-align: center;
       .boton-contacto {
+        @extend %boton-config;
         font-size: 10px;
-            width: 60px;
-            height: 30px;
-            background-color: #FE4365;
-            color: map-get($colores, texto-uno );
-            border-radius: 5px;
-            padding: 5px;
-            transition: background-color .5s;
+        color: map-get($colores, texto-uno );
+        padding: 5px;
+        transition: background-color .5s;
       }
   }
     .formulario {

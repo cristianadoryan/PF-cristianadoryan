@@ -8,7 +8,7 @@
     ;
     grid-template-columns: 25% 25% 25% 25%;
     .introduccion-galeria {
-        @extend %flex-center;
+        @include flex (flex, row, center, center);
         background-color: #FE4365;
         height: 60px;
         text-align: center;
@@ -28,12 +28,11 @@
             gap: 5px;
             justify-content: center;
             .card-galeria {
-                @extend %flex-center;
+                @include flex (flex, column, center, center);
                 background-color: #AEE8FB;
                 border-radius: 30px;
                 width: 300px;
                 height: 520px;
-                flex-direction: column;
                 padding-top: 15px;
                 border: 5px solid #76D3DE;
                 text-align: center;
@@ -71,8 +70,7 @@
         
     }
     .aside-galeria {
-        @extend %flex-center;
-        flex-direction: column;
+        @include flex (flex, column, center, center);
         background-color: map-get($colores, fondo-dos );
         text-align: center;
         grid-area: aside;
@@ -90,12 +88,9 @@
             
         }
         button {
+            @extend %boton-config;
             font-size: 10px;
-            width: 80px;
-            height: 50px;
-            background-color: #FE4365;
             color: map-get($colores, texto-uno );
-            border-radius: 5px;
             padding: 5px;
             transition: background-color .5s;
         }

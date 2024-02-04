@@ -108,10 +108,11 @@ footer img {
   padding-bottom: 20px;
 }
 
-.main-contacto .aside-contacto, .main-ubicacion .globo-ubicacion, .main-ubicacion, .otro-cotizador, .dato-cotizador, .body .aside-galeria, .body .galeria-imagenes .section .card-galeria, .body .introduccion-galeria, .introduccion .descripcion, .introduccion .video-index {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.main-contacto .aside-contacto .boton-contacto, .body .aside-galeria button {
+  width: 60px;
+  height: 30px;
+  background-color: #FE4365;
+  border-radius: 5px;
 }
 
 .introduccion {
@@ -120,6 +121,10 @@ footer img {
   justify-content: space-between;
 }
 .introduccion .video-index {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   height: 430px;
   background-color: #83AF9B;
   box-shadow: 10px 10px black;
@@ -139,6 +144,10 @@ footer img {
   color: #ffffff;
 }
 .introduccion .descripcion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   background-color: #FE4365;
   height: 60px;
   border-radius: 15px;
@@ -174,7 +183,7 @@ footer img {
   border-radius: 10px;
 }
 .ilustraciones .ilus .card-index p {
-  margin-top: 20px;
+  margin-top: 10px;
   text-align: center;
   color: #ffffff;
   font-size: 20px;
@@ -205,6 +214,10 @@ footer img {
   grid-template-columns: 25% 25% 25% 25%;
 }
 .body .introduccion-galeria {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   background-color: #FE4365;
   height: 60px;
   text-align: center;
@@ -226,11 +239,14 @@ footer img {
   justify-content: center;
 }
 .body .galeria-imagenes .section .card-galeria {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #AEE8FB;
   border-radius: 30px;
   width: 300px;
   height: 520px;
-  flex-direction: column;
   padding-top: 15px;
   border: 5px solid #76D3DE;
   text-align: center;
@@ -264,7 +280,10 @@ footer img {
   align-items: center;
 }
 .body .aside-galeria {
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #83AF9B;
   text-align: center;
   grid-area: aside;
@@ -283,11 +302,7 @@ footer img {
 }
 .body .aside-galeria button {
   font-size: 10px;
-  width: 80px;
-  height: 50px;
-  background-color: #FE4365;
   color: #ffffff;
-  border-radius: 5px;
   padding: 5px;
   transition: background-color 0.5s;
 }
@@ -304,6 +319,13 @@ main section div .card-galeria button:hover {
 
 .cotizador {
   margin-top: 50px;
+}
+
+.dato-cotizador {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .importante button {
@@ -327,6 +349,10 @@ main section div .card-galeria button:hover {
 }
 
 .otro-cotizador {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   background-color: #FE4365;
   width: 400px;
   height: 100px;
@@ -381,6 +407,12 @@ tr:hover {
   cursor: pointer;
 }
 
+.main-ubicacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 .main-ubicacion .mapa {
   margin-top: 40px;
   margin-right: 70px;
@@ -404,6 +436,10 @@ tr:hover {
   margin-top: 40px;
 }
 .main-ubicacion .globo-ubicacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 200px;
   height: 200px;
   border-radius: 20px;
@@ -431,7 +467,10 @@ tr:hover {
   display: flex;
 }
 .main-contacto .aside-contacto {
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 200px;
   height: 400px;
   background-color: #83AF9B;
@@ -444,11 +483,7 @@ tr:hover {
 }
 .main-contacto .aside-contacto .boton-contacto {
   font-size: 10px;
-  width: 60px;
-  height: 30px;
-  background-color: #FE4365;
   color: #ffffff;
-  border-radius: 5px;
   padding: 5px;
   transition: background-color 0.5s;
 }

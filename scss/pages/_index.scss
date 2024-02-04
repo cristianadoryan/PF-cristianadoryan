@@ -4,7 +4,7 @@
     margin-top: 20px;
     justify-content: space-between;
     .video-index {
-        @extend %flex-center;
+        @include flex (flex, row, center, center);
         height:430px;
         background-color: map-get($colores, fondo-dos );
         box-shadow: $sombra-cuadros;
@@ -27,7 +27,7 @@
         
     }
     .descripcion {
-        @extend %flex-center;
+        @include flex (flex, row, center, center);
         background-color: #FE4365;
         height: 60px;
         border-radius: 15px;
@@ -62,7 +62,7 @@
                 border-radius: 10px;
             }
             p {
-                margin-top: 20px;
+                margin-top: 10px;
                 text-align: center;
                 color: map-get($colores, texto-uno );
                 font-size: 20px;
