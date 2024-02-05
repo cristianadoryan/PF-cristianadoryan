@@ -1,29 +1,92 @@
 @media (max-width:991px) {
 
-    body {
-        width: 100vh
+    /*general*/
+    .titulo-cabecera {
+        height: 350px;
+        h1 {
+            font-size: 25px;
+            font-weight: bold;
+        }
     }
 
-    .body .galeria-imagenes .section {
-        grid-template-columns: repeat(2, 350px);
-        grid-template-rows: repeat(3, 1fr);
-    }
+    /*galeria*/ 
+
     .body {
         grid-template-areas:
         "intro intro intro"
         "imagen imagen imagen"
         "aside aside aside"
         ;
-        grid-template-columns: 1fr 1fr; 
+        grid-template-columns: 1fr 1fr;
+        .galeria-imagenes .section {
+            grid-template-columns: repeat(2, 350px);
+            grid-template-rows: repeat(3, 1fr);
+        }
+        .introduccion-galeria {
+            height: 100px;
+            margin-bottom: 15px;
+        }
+        .aside-galeria {
+            font-size: 13px;
+        }
     }
     
+    /*ubicacion*/
+
+    .main-ubicacion {
+        flex-wrap: wrap;
+    }
+
+    .mapa {
+        margin-right: 0px;
+        margin-left: 0px;
+        .iframe-mapa {
+            width: 400px;
+            height: 250px;
+            border-radius: 10px;
+        }
+    }
+
+    /*contacto*/
+
+    .main-contacto {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+        .aside-contacto {
+            width: 400px;
+            height: 200px;
+            margin-right: 0px;
+            margin-top: 20px;
+        }   
+    }
+         
+}
+
+@media (min-width:481px) {
+    .tabla-mobile {
+        display: none;
+    }
 }
 
 @media (max-width:480px) {
     
-     body {
-        width: 100vh
+    /*COTIZADOR*/
+    .tabla-desktop {
+        display: none;
     }
+
+    .tabla-mobile {
+        td {
+            font-size: 15px;
+        }
+    }
+
+    .tabla-prueba {
+        justify-content: center;
+    }
+
+    /*GALERIA*/
 
     .body .galeria-imagenes .section {
         grid-template-columns: repeat(1, 350px);
@@ -36,4 +99,6 @@
         "aside";
         grid-template-columns: 1fr; 
     }
+
+    
 }

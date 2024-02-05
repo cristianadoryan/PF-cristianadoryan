@@ -16,13 +16,15 @@
         }
     }
     .nosotros {
-        background-color: rgb(124, 137, 146);
+        background-color: #AEE8FB;
         border-radius: 15px;
         text-align: center;
         box-shadow: $sombra-cuadros;
         padding-top: 20px;
         h4 {
+            font-weight: bold;
             color: map-get($colores, texto-uno );
+            margin-bottom: 20px
         }
         
     }

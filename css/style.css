@@ -49,13 +49,15 @@ header nav div ul li {
 .titulo-cabecera {
   text-align: center;
   color: #B28939;
-  font-size: 4rem;
   background-image: url(../img/fondo-titulo.webp);
   background-position: center;
   height: 450px;
   margin-top: 20px;
   box-shadow: 10px 10px black;
   border-radius: 15px;
+}
+.titulo-cabecera h1 {
+  font-size: 50px;
 }
 
 /*FOOTER*/
@@ -140,14 +142,16 @@ footer img {
   border-radius: 15px;
 }
 .introduccion .nosotros {
-  background-color: rgb(124, 137, 146);
+  background-color: #AEE8FB;
   border-radius: 15px;
   text-align: center;
   box-shadow: 10px 10px black;
   padding-top: 20px;
 }
 .introduccion .nosotros h4 {
+  font-weight: bold;
   color: #ffffff;
+  margin-bottom: 20px;
 }
 .introduccion .descripcion {
   display: flex;
@@ -390,7 +394,12 @@ main section div .card-galeria button:hover {
   animation-duration: 1s;
 }
 
-table {
+.tabla {
+  display: flex;
+  justify-content: center;
+}
+
+.tabla-desktop {
   border-collapse: collapse;
   box-shadow: 10px 10px black;
 }
@@ -424,12 +433,15 @@ tr:hover {
   margin-right: 70px;
   margin-left: 70px;
   border-radius: 10px;
-  width: 640px;
-  height: 480px;
   background-color: #83AF9B;
-  padding: 17px;
+  padding: 20px;
   box-shadow: 10px 10px black;
   z-index: 1;
+}
+.main-ubicacion .mapa .iframe-mapa {
+  width: 610px;
+  height: 450px;
+  border-radius: 10px;
 }
 .main-ubicacion .boton-ubicacion button {
   height: 40px;
@@ -519,22 +531,73 @@ tr:hover {
 }
 
 @media (max-width: 991px) {
-  body {
-    width: 100vh;
+  /*general*/
+  .titulo-cabecera {
+    height: 350px;
+  }
+  .titulo-cabecera h1 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  /*galeria*/
+  .body {
+    grid-template-areas: "intro intro intro" "imagen imagen imagen" "aside aside aside";
+    grid-template-columns: 1fr 1fr;
   }
   .body .galeria-imagenes .section {
     grid-template-columns: repeat(2, 350px);
     grid-template-rows: repeat(3, 1fr);
   }
-  .body {
-    grid-template-areas: "intro intro intro" "imagen imagen imagen" "aside aside aside";
-    grid-template-columns: 1fr 1fr;
+  .body .introduccion-galeria {
+    height: 100px;
+    margin-bottom: 15px;
+  }
+  .body .aside-galeria {
+    font-size: 13px;
+  }
+  /*ubicacion*/
+  .main-ubicacion {
+    flex-wrap: wrap;
+  }
+  .mapa {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .mapa .iframe-mapa {
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+  }
+  /*contacto*/
+  .main-contacto {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .main-contacto .aside-contacto {
+    width: 400px;
+    height: 200px;
+    margin-right: 0px;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 481px) {
+  .tabla-mobile {
+    display: none;
   }
 }
 @media (max-width: 480px) {
-  body {
-    width: 100vh;
+  /*COTIZADOR*/
+  .tabla-desktop {
+    display: none;
   }
+  .tabla-mobile td {
+    font-size: 15px;
+  }
+  .tabla-prueba {
+    justify-content: center;
+  }
+  /*GALERIA*/
   .body .galeria-imagenes .section {
     grid-template-columns: repeat(1, 350px);
     grid-template-rows: repeat(6, 1fr);

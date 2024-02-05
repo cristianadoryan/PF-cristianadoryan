@@ -5,13 +5,19 @@
         margin-right: 70px;
         margin-left: 70px;
         border-radius: 10px;
-        width: 640px;
-        height:480px;
         background-color:map-get($colores, fondo-dos );
-        padding: 17px;
+        padding: 20px;
         box-shadow: $sombra-cuadros;
         z-index: 1;
+        .iframe-mapa {
+            width: 610px;
+            height: 450px;
+            border-radius: 10px;
+        }
     }
+
+    
+
     .boton-ubicacion 
     button {
         height: 40px;

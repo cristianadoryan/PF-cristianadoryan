@@ -28,8 +28,6 @@ background-size: 80px 80px;
 background-position: 0 0,40px 40px;
 }
 
-
-
 header {
     justify-content: center;
     
@@ -55,13 +53,15 @@ header {
 .titulo-cabecera {
     text-align: center;
     color: #B28939;
-    font-size: 4rem;
     background-image: url(../img/fondo-titulo.webp);
     background-position:center;
     height: 450px;
     margin-top: 20px;
     box-shadow: $sombra-cuadros;
     border-radius: 15px;
+    h1 {
+        font-size: 50px;
+    }
 }
 
 /*FOOTER*/

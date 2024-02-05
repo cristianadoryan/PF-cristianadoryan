@@ -63,7 +63,12 @@
     animation-duration: 1s;
 }
 
-table {
+.tabla {
+    display: flex;
+    justify-content: center;
+}
+
+.tabla-desktop {
     border-collapse: collapse;
     box-shadow: $sombra-cuadros;
 
@@ -88,3 +93,4 @@ tr:hover {
     background-color: #FC9D9A;
     cursor: pointer;
 }
+
