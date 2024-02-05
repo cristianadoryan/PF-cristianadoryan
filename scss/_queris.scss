@@ -1,3 +1,9 @@
+@media (min-width:992px) {
+    .transform-mobile {
+        display: none;
+    }
+}
+
 @media (max-width:991px) {
 
     /*general*/
@@ -35,7 +41,7 @@
     /*ubicacion*/
 
     .main-ubicacion {
-        flex-wrap: wrap;
+        @include flex (flex, column, center, center);
     }
 
     .mapa {
@@ -48,6 +54,9 @@
         }
     }
 
+    .transform-desktop {
+        display: none;
+    }
     /*contacto*/
 
     .main-contacto {
@@ -65,30 +74,44 @@
          
 }
 
+/*------MEDIA DE 990------*/
+@media (max-width:992px) {
+    .trasform-mobile {
+        display: none;
+    }
+}
+
+/*------MEDIA DE 578 tabla------*/
 @media (min-width:577px) {
     .tabla-mobile {
         display: none;
     }
 }
 
+/*------MEDIA DE 577 tabla------*/
 @media (max-width:576px) {
-    
-        /*INDEX*/
+    .tabla-desktop {
+        display: none;
+    }
+}
 
-        .introduccion {
-            justify-content: center;
-            .nosotros {
-               margin-top: 20px;
-               width: 350px; 
-               height: 400px;
-            }
-            .descripcion {
-               margin-top: 20px;
-               width: 350px; 
-               height: 200px;
-            }
-            
+/*------MEDIA DE 576------*/
+@media (max-width:576px) {
+
+    /*INDEX*/
+    .introduccion {
+        justify-content: center;
+        .nosotros {
+           margin-top: 20px;
+           width: 350px; 
+           height: 400px;
         }
+        .descripcion {
+           margin-top: 20px;
+           width: 350px; 
+           height: 200px;
+        }    
+    }
     
 
     /*COTIZADOR*/
@@ -120,5 +143,7 @@
         grid-template-columns: 1fr; 
     }
 
+    /*MAPA*/
+    
     
 }

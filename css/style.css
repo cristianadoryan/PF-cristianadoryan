@@ -116,7 +116,7 @@ footer img {
   padding-bottom: 20px;
 }
 
-.main-contacto .aside-contacto .boton-contacto, .body .aside-galeria button {
+.main-contacto .aside-contacto .boton-contacto, .transform-mobile button, .body .aside-galeria button {
   width: 60px;
   height: 30px;
   background-color: #FE4365;
@@ -422,11 +422,13 @@ tr:hover {
   cursor: pointer;
 }
 
+/*SECTOR DEL MAPA*/
 .main-ubicacion {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  /*ELEMENTOS PARA ANIMAR EN DESKTOP*/
 }
 .main-ubicacion .mapa {
   margin-top: 40px;
@@ -472,6 +474,33 @@ tr:hover {
   transform: translateX(-300px);
 }
 
+.transform-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 150px;
+  background-color: #FC9D9A;
+  font-size: 15px;
+  box-shadow: 10px 10px black;
+  border-radius: 15px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+.transform-mobile button {
+  font-size: 10px;
+  color: #ffffff;
+  padding: 5px;
+  transition: background-color 0.5s;
+}
+.transform-mobile button a {
+  text-decoration: none;
+}
+
+/*ANIMACIONES*/
 .boton-ubicacion a {
   text-decoration: none;
 }
@@ -530,6 +559,11 @@ tr:hover {
   padding: 15px;
 }
 
+@media (min-width: 992px) {
+  .transform-mobile {
+    display: none;
+  }
+}
 @media (max-width: 991px) {
   /*general*/
   .titulo-cabecera {
@@ -557,7 +591,10 @@ tr:hover {
   }
   /*ubicacion*/
   .main-ubicacion {
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .mapa {
     margin-right: 0px;
@@ -567,6 +604,9 @@ tr:hover {
     width: 400px;
     height: 250px;
     border-radius: 10px;
+  }
+  .transform-desktop {
+    display: none;
   }
   /*contacto*/
   .main-contacto {
@@ -582,11 +622,25 @@ tr:hover {
     padding: 10px;
   }
 }
+/*------MEDIA DE 990------*/
+@media (max-width: 992px) {
+  .trasform-mobile {
+    display: none;
+  }
+}
+/*------MEDIA DE 578 tabla------*/
 @media (min-width: 577px) {
   .tabla-mobile {
     display: none;
   }
 }
+/*------MEDIA DE 577 tabla------*/
+@media (max-width: 576px) {
+  .tabla-desktop {
+    display: none;
+  }
+}
+/*------MEDIA DE 576------*/
 @media (max-width: 576px) {
   /*INDEX*/
   .introduccion {
@@ -621,6 +675,7 @@ tr:hover {
     grid-template-areas: "intro" "imagen" "aside";
     grid-template-columns: 1fr;
   }
+  /*MAPA*/
 }
 
 /*# sourceMappingURL=style.css.map */

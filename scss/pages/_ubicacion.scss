@@ -1,3 +1,6 @@
+
+/*SECTOR DEL MAPA*/
+
 .main-ubicacion {
     @include flex (flex, row, center, center);
     .mapa {
@@ -16,7 +19,7 @@
         }
     }
 
-    
+/*ELEMENTOS PARA ANIMAR EN DESKTOP*/
 
     .boton-ubicacion 
     button {
@@ -45,6 +48,31 @@
         transform: translateX(-300px);
     }
 }
+
+.transform-mobile{
+    @include flex (flex, column, center, center);
+      width: 200px;
+      height: 150px;
+      background-color:map-get($colores, fondo-uno );
+      font-size: 15px;
+      box-shadow: $sombra-cuadros;
+      border-radius: 15px;
+      color: map-get($colores, texto-uno );
+      text-align: center;
+      margin-top: 20px;
+      padding: 10px;
+      button {
+        @extend %boton-config;
+        font-size: 10px;
+        color: map-get($colores, texto-uno );
+        padding: 5px;
+        transition: background-color .5s;
+        a {
+            text-decoration: none;
+        }
+      }
+}
+/*ANIMACIONES*/
 
 .boton-ubicacion a {
     text-decoration: none;
