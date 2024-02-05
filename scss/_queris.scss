@@ -9,6 +9,7 @@
         }
     }
 
+
     /*galeria*/ 
 
     .body {
@@ -58,19 +59,38 @@
             height: 200px;
             margin-right: 0px;
             margin-top: 20px;
+            padding: 10px;
         }   
     }
          
 }
 
-@media (min-width:481px) {
+@media (min-width:577px) {
     .tabla-mobile {
         display: none;
     }
 }
 
-@media (max-width:480px) {
+@media (max-width:576px) {
     
+        /*INDEX*/
+
+        .introduccion {
+            justify-content: center;
+            .nosotros {
+               margin-top: 20px;
+               width: 350px; 
+               height: 400px;
+            }
+            .descripcion {
+               margin-top: 20px;
+               width: 350px; 
+               height: 200px;
+            }
+            
+        }
+    
+
     /*COTIZADOR*/
     .tabla-desktop {
         display: none;
