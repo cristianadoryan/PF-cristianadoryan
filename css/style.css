@@ -431,19 +431,17 @@ tr:hover {
   /*ELEMENTOS PARA ANIMAR EN DESKTOP*/
 }
 .main-ubicacion .mapa {
-  margin-top: 40px;
-  margin-right: 70px;
-  margin-left: 70px;
-  border-radius: 10px;
-  background-color: #83AF9B;
-  padding: 20px;
-  box-shadow: 10px 10px black;
   z-index: 1;
 }
 .main-ubicacion .mapa .iframe-mapa {
+  margin-top: 40px;
   width: 610px;
   height: 450px;
   border-radius: 10px;
+  box-shadow: 10px 10px black;
+}
+.main-ubicacion .boton-ubicacion {
+  margin-left: 50px;
 }
 .main-ubicacion .boton-ubicacion button {
   height: 40px;
@@ -638,6 +636,19 @@ tr:hover {
 @media (max-width: 576px) {
   .tabla-desktop {
     display: none;
+  }
+  .main-ubicacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-ubicacion .mapa .iframe-mapa {
+    margin-top: 40px;
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 10px 10px black;
   }
 }
 /*------MEDIA DE 576------*/

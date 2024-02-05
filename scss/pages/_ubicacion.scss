@@ -4,33 +4,30 @@
 .main-ubicacion {
     @include flex (flex, row, center, center);
     .mapa {
-        margin-top: 40px;
-        margin-right: 70px;
-        margin-left: 70px;
-        border-radius: 10px;
-        background-color:map-get($colores, fondo-dos );
-        padding: 20px;
-        box-shadow: $sombra-cuadros;
         z-index: 1;
         .iframe-mapa {
+            margin-top: 40px;
             width: 610px;
             height: 450px;
             border-radius: 10px;
+            box-shadow: $sombra-cuadros;
         }
     }
 
 /*ELEMENTOS PARA ANIMAR EN DESKTOP*/
 
-    .boton-ubicacion 
-    button {
-        height: 40px;
-        background-color: #AEE8FB; 
-        color: map-get($colores, texto-uno );
-        border-radius: 5px;
-        padding: 5px;
-        margin-bottom: 20px;
-        border: none;
-        margin-top: 40px;
+    .boton-ubicacion {
+        margin-left: 50px;
+        button {
+            height: 40px;
+            background-color: #AEE8FB; 
+            color: map-get($colores, texto-uno );
+            border-radius: 5px;
+            padding: 5px;
+            margin-bottom: 20px;
+            border: none;
+            margin-top: 40px;
+        }
     }
     .globo-ubicacion {
         @include flex (flex, row, center, center);

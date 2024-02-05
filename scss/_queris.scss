@@ -93,6 +93,20 @@
     .tabla-desktop {
         display: none;
     }
+
+    .main-ubicacion {
+        @include flex (flex, column, center, center);
+        .mapa {
+            .iframe-mapa {
+                margin-top: 40px;
+                width: 350px;
+                height: 350px;
+                border-radius: 10px;
+                box-shadow: $sombra-cuadros;
+            }
+        }
+    }    
+
 }
 
 /*------MEDIA DE 576------*/
