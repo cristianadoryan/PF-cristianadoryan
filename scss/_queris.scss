@@ -7,6 +7,7 @@
 @media (max-width:991px) {
 
     /*general*/
+    
     .titulo-cabecera {
         height: 350px;
         h1 {
@@ -107,6 +108,20 @@
         }
     }    
 
+    .introduccion {
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-between;
+        .video-index {
+            @include flex (flex, row, center, center);
+            .iframe-youtube {
+                border-radius: 15px;
+                box-shadow: $sombra-cuadros;
+                width: 350px;
+                height: 350px;
+            }
+        }
+    }    
 }
 
 /*------MEDIA DE 576------*/
@@ -157,7 +172,5 @@
         grid-template-columns: 1fr; 
     }
 
-    /*MAPA*/
-    
     
 }

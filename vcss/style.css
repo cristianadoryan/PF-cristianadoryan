@@ -125,8 +125,8 @@ footer img {
 
 .introduccion {
   display: flex;
-  justify-content: space-between;
   margin-top: 20px;
+  justify-content: space-between;
 }
 .introduccion .video-index {
   display: flex;
@@ -140,79 +140,77 @@ footer img {
   width: 600px;
   height: 450px;
 }
+.introduccion .nosotros {
+  background-color: #AEE8FB;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 10px 10px black;
+  padding-top: 20px;
+}
+.introduccion .nosotros h4 {
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
 .introduccion .descripcion {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #FE4365;
-  border-radius: 15px;
-  box-shadow: 10px 10px black;
-  color: #ffffff;
   height: 60px;
-  margin-top: 30px;
-}
-.introduccion .nosotros {
-  background-color: #AEE8FB;
   border-radius: 15px;
-  box-shadow: 10px 10px black;
-  text-align: center;
-  padding-top: 20px;
-}
-.introduccion .nosotros h4 {
   color: #ffffff;
-  font-weight: bold;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  box-shadow: 10px 10px black;
 }
 
 .ilustraciones {
-  background-color: #FC9D9A;
   display: flex;
+  background-color: #FC9D9A;
   margin-top: 50px;
-  box-shadow: 10px 10px black;
-  padding: 30px;
 }
 .ilustraciones .ilus {
   gap: 20px;
 }
 .ilustraciones .ilus .card-index {
+  transition: box-shadow 0.3s ease;
   background-color: rgba(225, 225, 225, 0.25);
-  border-radius: 30px;
-  cursor: pointer;
+  width: 300px;
   height: 450px;
-  margin-top: 30px;
   padding: 20px 30px;
   position: relative;
-  transition: box-shadow 0.3s ease;
-  width: 300px;
+  margin-top: 30px;
+  border-radius: 30px;
+  cursor: pointer;
 }
 .ilustraciones .ilus .card-index img {
-  border-radius: 10px;
-  display: block;
-  height: 325px;
-  margin: 0 auto;
   width: 225px;
+  height: 325px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
 }
 .ilustraciones .ilus .card-index p {
-  border-radius: 20px;
-  color: #ffffff;
-  font-size: 20px;
   margin-top: 10px;
   text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  border-radius: 20px;
 }
 .ilustraciones .ilus .card-index .bodysuit {
-  background-color: #FE4365;
-  left: 0px;
-  opacity: 0.7;
   position: absolute;
   top: 0;
+  left: 0px;
+  background-color: #FE4365;
+  opacity: 0.7;
 }
 
 .chat {
-  bottom: 100px;
-  position: fixed;
-  right: 30px;
   width: 60px;
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
 }
 
 .card-index:hover {
