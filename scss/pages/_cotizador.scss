@@ -1,24 +1,25 @@
 .cotizador {
     margin-top: 50px;
+    @include flex (flex, row, center, center);
 }
 
 .dato-cotizador {
-    @include flex (flex, row, center, center);
+    @include flex (flex, column, center, center);
+    margin-left: 20px;
 }
 
 .importante button{
     background-color: #FE4365;
-    width: 400px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     color: map-get($colores, texto-uno );
-    margin-top: 30px;
     align-items: center;
     justify-content: center;
     padding: 15px;
     text-align: center; 
-    font-size: 30px;
+    font-size: 25px;
     border: none;
 }
 
@@ -29,14 +30,14 @@
 .otro-cotizador {
     @include flex (flex, row, center, center);
     background-color: #FE4365;
-    width: 400px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
     color: map-get($colores, texto-uno );
     padding: 15px;
     text-align: center;
-    font-size: 15px  ;
+    font-size: 15px ;
 }
 
 @keyframes otro-cotizador {
@@ -45,15 +46,15 @@
     }
 
     25%{
-        background-color: #fe9743;
+        background-color: #fe5f43;
     }
 
     50%{
-        background-color: #fed243;
+        background-color: #fe5f43;
     }
 
     100%{
-        background-color: #fbfe43;
+        background-color: #fda16b;
     }
 }
 
@@ -71,7 +72,7 @@
 .tabla-desktop {
     border-collapse: collapse;
     box-shadow: $sombra-cuadros;
-
+    height: 400px;
 }
 
 th, td {
@@ -85,7 +86,7 @@ th, td {
 th {
     color: map-get($colores, texto-uno );
     background-color: #FE4365;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 

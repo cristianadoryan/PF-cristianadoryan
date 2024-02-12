@@ -7,12 +7,51 @@
 @media (max-width:991px) {
 
     /*general*/
-    
+
+    header {
+        box-shadow: none;
+        nav div a img {
+            height: 80px;
+            width: 300px;
+        }
+    }
+
     .titulo-cabecera {
+        box-shadow: none;
         height: 350px;
         h1 {
             font-size: 25px;
             font-weight: bold;
+        }
+    }
+
+    /*index*/
+
+    .introduccion {
+        .video-index {
+            .iframe-youtube {
+                box-shadow: none;
+            }
+        }
+        .nosotros {
+            box-shadow: none;
+            width: 90%;
+        }
+        .descripcion {
+            box-shadow: none
+        }
+    }
+
+    .ilustraciones {
+        box-shadow: none;
+    }
+
+    /*cotizador*/
+
+    .cotizador {
+        flex-wrap: wrap;
+        .dato-cotizador {
+            margin-top: 20px;
         }
     }
 
@@ -29,10 +68,14 @@
         .galeria-imagenes .section {
             grid-template-columns: repeat(2, 350px);
             grid-template-rows: repeat(3, 1fr);
+            .card-galeria {
+                box-shadow: none;
+            }
         }
         .introduccion-galeria {
             height: 100px;
             margin-bottom: 15px;
+            box-shadow: none;
         }
         .aside-galeria {
             font-size: 13px;
@@ -103,7 +146,6 @@
                 width: 350px;
                 height: 350px;
                 border-radius: 10px;
-                box-shadow: $sombra-cuadros;
             }
         }
     }    
@@ -116,7 +158,6 @@
             @include flex (flex, row, center, center);
             .iframe-youtube {
                 border-radius: 15px;
-                box-shadow: $sombra-cuadros;
                 width: 350px;
                 height: 350px;
             }
@@ -144,6 +185,25 @@
     
 
     /*COTIZADOR*/
+
+    .dato-cotizador {
+        margin-left: 0px;
+    }
+
+    .importante button {
+        width: 320px;
+        height: 100px;
+    }
+
+    .otro-cotizador {
+        width: 320px;
+        height: 100px;
+    }
+
+    .tabla-mobile {
+        width:320px;
+    }
+
     .tabla-desktop {
         display: none;
     }

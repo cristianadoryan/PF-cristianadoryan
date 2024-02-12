@@ -330,28 +330,32 @@ main section div .card-galeria button:hover {
 
 .cotizador {
   margin-top: 50px;
-}
-
-.dato-cotizador {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
+.dato-cotizador {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+
 .importante button {
   background-color: #FE4365;
-  width: 400px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   color: #ffffff;
-  margin-top: 30px;
   align-items: center;
   justify-content: center;
   padding: 15px;
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   border: none;
 }
 
@@ -365,8 +369,8 @@ main section div .card-galeria button:hover {
   justify-content: center;
   align-items: center;
   background-color: #FE4365;
-  width: 400px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
   color: #ffffff;
@@ -380,13 +384,13 @@ main section div .card-galeria button:hover {
     background-color: #FE4365;
   }
   25% {
-    background-color: #fe9743;
+    background-color: #fe5f43;
   }
   50% {
-    background-color: #fed243;
+    background-color: #fe5f43;
   }
   100% {
-    background-color: #fbfe43;
+    background-color: #fda16b;
   }
 }
 .importante:hover .otro-cotizador {
@@ -403,6 +407,7 @@ main section div .card-galeria button:hover {
 .tabla-desktop {
   border-collapse: collapse;
   box-shadow: 10px 10px black;
+  height: 400px;
 }
 
 th, td {
@@ -415,7 +420,7 @@ th, td {
 th {
   color: #ffffff;
   background-color: #FE4365;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 tr:hover {
@@ -565,12 +570,41 @@ tr:hover {
 }
 @media (max-width: 991px) {
   /*general*/
+  header {
+    box-shadow: none;
+  }
+  header nav div a img {
+    height: 80px;
+    width: 300px;
+  }
   .titulo-cabecera {
+    box-shadow: none;
     height: 350px;
   }
   .titulo-cabecera h1 {
     font-size: 25px;
     font-weight: bold;
+  }
+  /*index*/
+  .introduccion .video-index .iframe-youtube {
+    box-shadow: none;
+  }
+  .introduccion .nosotros {
+    box-shadow: none;
+    width: 90%;
+  }
+  .introduccion .descripcion {
+    box-shadow: none;
+  }
+  .ilustraciones {
+    box-shadow: none;
+  }
+  /*cotizador*/
+  .cotizador {
+    flex-wrap: wrap;
+  }
+  .cotizador .dato-cotizador {
+    margin-top: 20px;
   }
   /*galeria*/
   .body {
@@ -581,9 +615,13 @@ tr:hover {
     grid-template-columns: repeat(2, 350px);
     grid-template-rows: repeat(3, 1fr);
   }
+  .body .galeria-imagenes .section .card-galeria {
+    box-shadow: none;
+  }
   .body .introduccion-galeria {
     height: 100px;
     margin-bottom: 15px;
+    box-shadow: none;
   }
   .body .aside-galeria {
     font-size: 13px;
@@ -649,7 +687,6 @@ tr:hover {
     width: 350px;
     height: 350px;
     border-radius: 10px;
-    box-shadow: 10px 10px black;
   }
   .introduccion {
     display: flex;
@@ -664,7 +701,6 @@ tr:hover {
   }
   .introduccion .video-index .iframe-youtube {
     border-radius: 15px;
-    box-shadow: 10px 10px black;
     width: 350px;
     height: 350px;
   }
@@ -686,6 +722,20 @@ tr:hover {
     height: 200px;
   }
   /*COTIZADOR*/
+  .dato-cotizador {
+    margin-left: 0px;
+  }
+  .importante button {
+    width: 320px;
+    height: 100px;
+  }
+  .otro-cotizador {
+    width: 320px;
+    height: 100px;
+  }
+  .tabla-mobile {
+    width: 320px;
+  }
   .tabla-desktop {
     display: none;
   }
