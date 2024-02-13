@@ -68,11 +68,11 @@ header nav div ul li {
 }
 
 .boton-inicio {
-  width: 70px;
-  height: 40px;
-  background: linear-gradient(to right, #FE4365, #AEE8FB);
-  color: white;
+  width: 60px;
+  height: 30px;
+  background-color: #FE4365;
   border-radius: 5px;
+  font-size: 10px;
   padding: 5px;
 }
 
@@ -516,17 +516,20 @@ tr:hover {
 .main-contacto {
   margin-top: 50px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .main-contacto .aside-contacto {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 400px;
+  width: 400px;
+  height: 200px;
+  padding: 10px;
   background-color: #83AF9B;
   font-size: 15px;
-  margin-right: 100px;
   box-shadow: 10px 10px black;
   border-radius: 15px;
   color: #ffffff;
@@ -540,13 +543,12 @@ tr:hover {
 }
 .main-contacto .formulario {
   background-color: white;
-  margin: auto;
-  width: 90%;
-  max-width: 400px;
+  width: 400px;
   padding: 20px;
   border-radius: 15px;
   box-shadow: 10px 10px black;
   text-align: center;
+  margin-bottom: 30px;
 }
 .main-contacto .formulario .form-titulo {
   font-size: 40px;
@@ -561,6 +563,14 @@ tr:hover {
   color: grey;
   font-size: 15px;
   padding: 15px;
+}
+.main-contacto .formulario .boton-formulario {
+  width: 120px;
+  background-color: #FE4365;
+  border-radius: 5px;
+  font-size: 10px;
+  color: #ffffff;
+  padding: 5px;
 }
 
 @media (min-width: 992px) {
@@ -584,6 +594,13 @@ tr:hover {
   .titulo-cabecera h1 {
     font-size: 25px;
     font-weight: bold;
+  }
+  footer section div p {
+    font-size: 12px;
+  }
+  footer section div img {
+    width: 40px;
+    height: 40px;
   }
   /*index*/
   .introduccion .video-index .iframe-youtube {
@@ -753,6 +770,26 @@ tr:hover {
   .body {
     grid-template-areas: "intro" "imagen" "aside";
     grid-template-columns: 1fr;
+  }
+  /*ubicacion*/
+  .main-ubicacion .mapa .iframe-mapa {
+    box-shadow: none;
+    width: 330px;
+    height: 250px;
+  }
+  .transform-mobile {
+    box-shadow: none;
+    width: 330px;
+    height: 100px;
+  }
+  /*contacto*/
+  .main-contacto .aside-contacto {
+    box-shadow: none;
+    width: 320px;
+  }
+  .main-contacto .formulario {
+    box-shadow: none;
+    width: 320px;
   }
 }
 

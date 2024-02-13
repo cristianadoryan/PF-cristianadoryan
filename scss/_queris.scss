@@ -25,6 +25,18 @@
         }
     }
 
+    footer {
+        section div {
+            p {
+                font-size: 12px;
+            }
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }  
+    }
+
     /*index*/
 
     .introduccion {
@@ -232,5 +244,35 @@
         grid-template-columns: 1fr; 
     }
 
+    /*ubicacion*/
     
+    .main-ubicacion {
+        .mapa {
+            .iframe-mapa {
+                box-shadow: none;
+                width: 330px;
+                height: 250px;
+            }
+        }
+    }
+
+    .transform-mobile {
+        box-shadow: none;
+        width: 330px;
+        height: 100px;
+    }
+
+    /*contacto*/
+
+    .main-contacto {
+        .aside-contacto {
+            box-shadow: none;
+            width: 320px;
+        }
+        .formulario {
+            box-shadow: none;
+            width: 320px;
+        }
+    }
+
 }
