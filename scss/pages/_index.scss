@@ -5,11 +5,14 @@
     margin-top: 20px;
     .video-index {
         @include flex (flex, row, center, center);
+        padding: 0px;
         .iframe-youtube {
             border-radius: 15px;
             box-shadow: $sombra-cuadros;
             width: 600px;
             height: 450px;
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
     }
     .descripcion {
@@ -22,11 +25,13 @@
         margin-top: 30px;
     }
     .nosotros {
-        background-color: #AEE8FB;
+        background-color: map-get($colores, fondo-dos );
         border-radius: 15px;
         box-shadow: $sombra-cuadros;
         text-align: center;
         padding-top: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
         h4 {
             color: map-get($colores, texto-uno );
             font-weight: bold;

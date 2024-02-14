@@ -19,14 +19,14 @@
     .boton-ubicacion {
         margin-left: 50px;
         button {
-            height: 40px;
-            background-color: #AEE8FB; 
-            color: map-get($colores, texto-uno );
+            background-color: #FE4365;
             border-radius: 5px;
             padding: 5px;
             margin-bottom: 20px;
             border: none;
             margin-top: 40px;
+            color: map-get($colores, texto-uno );
+            border: 2px solid black
         }
     }
     .globo-ubicacion {
@@ -34,7 +34,7 @@
         width: 200px;
         height: 200px;
         border-radius: 20px;
-        background: radial-gradient(ellipse 200px 100px, skyblue, #FC9D9A);
+        background-color: map-get($colores, fondo-dos );
         color: map-get($colores, texto-uno );
         text-transform: uppercase;
         transition: 1s;

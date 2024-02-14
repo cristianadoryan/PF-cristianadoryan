@@ -31,7 +31,7 @@ body {
 header {
   justify-content: center;
   display: flex;
-  background-color: #83AF9B;
+  background-color: #89B9AD;
   box-shadow: 10px 10px black;
 }
 header nav div a {
@@ -133,12 +133,15 @@ footer img {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding: 0px;
 }
 .introduccion .video-index .iframe-youtube {
   border-radius: 15px;
   box-shadow: 10px 10px black;
   width: 600px;
   height: 450px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .introduccion .descripcion {
   display: flex;
@@ -153,11 +156,13 @@ footer img {
   margin-top: 30px;
 }
 .introduccion .nosotros {
-  background-color: #AEE8FB;
+  background-color: #E78895;
   border-radius: 15px;
   box-shadow: 10px 10px black;
   text-align: center;
   padding-top: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .introduccion .nosotros h4 {
   color: #ffffff;
@@ -238,6 +243,8 @@ footer img {
   box-shadow: 10px 10px black;
   grid-area: intro;
   margin-bottom: 30px;
+  margin: 40px;
+  padding: 5px;
 }
 .body .galeria-imagenes {
   grid-area: imagen;
@@ -295,7 +302,7 @@ footer img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #83AF9B;
+  background-color: #E78895;
   text-align: center;
   grid-area: aside;
   border-radius: 30px;
@@ -450,14 +457,14 @@ tr:hover {
   margin-left: 50px;
 }
 .main-ubicacion .boton-ubicacion button {
-  height: 40px;
-  background-color: #AEE8FB;
-  color: #ffffff;
+  background-color: #FE4365;
   border-radius: 5px;
   padding: 5px;
   margin-bottom: 20px;
   border: none;
   margin-top: 40px;
+  color: #ffffff;
+  border: 2px solid black;
 }
 .main-ubicacion .globo-ubicacion {
   display: flex;
@@ -467,7 +474,7 @@ tr:hover {
   width: 200px;
   height: 200px;
   border-radius: 20px;
-  background: radial-gradient(ellipse 200px 100px, skyblue, #FC9D9A);
+  background-color: #E78895;
   color: #ffffff;
   text-transform: uppercase;
   transition: 1s;
@@ -528,7 +535,7 @@ tr:hover {
   width: 400px;
   height: 200px;
   padding: 10px;
-  background-color: #83AF9B;
+  background-color: #E78895;
   font-size: 15px;
   box-shadow: 10px 10px black;
   border-radius: 15px;
@@ -542,7 +549,7 @@ tr:hover {
   transition: background-color 0.5s;
 }
 .main-contacto .formulario {
-  background-color: white;
+  background-color: #BED1CF;
   width: 400px;
   padding: 20px;
   border-radius: 15px;
@@ -639,6 +646,8 @@ tr:hover {
     height: 100px;
     margin-bottom: 15px;
     box-shadow: none;
+    font-size: 13px;
+    margin: 10px;
   }
   .body .aside-galeria {
     font-size: 13px;
