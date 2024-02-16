@@ -290,12 +290,12 @@ footer img {
   margin: 0;
 }
 .body .galeria-imagenes .section .card-galeria div {
-  display: grid;
+  align-items: center;
   background-color: white;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+  display: grid;
   height: 110px;
-  align-items: center;
 }
 .body .aside-galeria {
   display: flex;
@@ -303,14 +303,14 @@ footer img {
   justify-content: center;
   align-items: center;
   background-color: #E78895;
-  text-align: center;
-  grid-area: aside;
   border-radius: 30px;
+  color: #ffffff;
+  font-size: 25px;
+  grid-area: aside;
   margin-right: 30px;
   margin-top: 20px;
-  font-size: 25px;
   padding: 10px;
-  color: #ffffff;
+  text-align: center;
 }
 .body .aside-galeria ul {
   padding: 0;

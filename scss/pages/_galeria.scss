@@ -57,12 +57,12 @@
                     margin: 0;
                 }
                 div {
-                    display: grid;
+                    align-items: center;
                     background-color: white;
                     border-bottom-left-radius: 30px;
                     border-bottom-right-radius: 30px;
+                    display: grid;
                     height: 110px;
-                    align-items: center;
                 }
                 
             }
@@ -72,14 +72,14 @@
     .aside-galeria {
         @include flex (flex, column, center, center);
         background-color: map-get($colores, fondo-dos );
-        text-align: center;
-        grid-area: aside;
         border-radius: 30px;
+        color: map-get($colores, texto-uno );
+        font-size: 25px;
+        grid-area: aside;
         margin-right: 30px;
         margin-top: 20px;
-        font-size: 25px;
         padding: 10px;
-        color: map-get($colores, texto-uno );
+        text-align: center;
         ul {
             padding: 0;
             li {
